@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto+Mono:ital,wght@0,100;0,200;1,100&family=Tilt+Prism&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Single Price Grid Component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    body{
+     margin: 0;
+     padding: 0;
+     background-color: rgb(225, 220, 220);
+    }
+
+    #main-container {
+      display: grid;
+      grid-template-rows: 50% 50%;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 5px 5px 5px 5px rgb(181, 181, 181);
+      border-radius: 10px;
+      margin: 100px;
+      font-family: "Roboto Mono";
+    }
+
+    #firstRow{
+      padding: 30px;
+      font-family: "Roboto";
+
+    }
+
+    #head-title{
+      color: hsl(179, 62%, 43%);
+      font-family: "Roboto";
+
+    }
+
+    #offers{
+      color: hsl(71, 73%, 54%);
+      font-family: "Roboto";
+    }
+
+    #details{
+      color: hsl(218, 22%, 67%);
+      font-family: "Roboto";
+    }
+@media  screen and (min-width:601px){
+    #secondRow {
+      display: grid;
+      grid-template-columns:50% 50%;
+      width: 100%;
+    }
+}
+  
+
+    #firstColumn{
+      background-color: hsl(179, 62%, 43%);
+      padding: 20px;
+      font-family: "Roboto";
+      display: grid;
+
+    }
+
+    #delay{
+      font-family: "Roboto Mono";
+    }
+
+    #subScript{
+      color: hsl(204, 43%, 93%);
+      font-family: "Roboto";
+    }
+
+    #sub-Offer{
+      color: hsl(204, 43%, 93%);
+      font-family: "Roboto Mono";
+
+    }
+
+    #salary{
+      font-weight: bold;
+      font-size:xx-large;
+      
+    }
+
+    #access-Offer{
+      color: hsl(204, 43%, 93%);
+    }
+
+    #sign-Button{
+      color: hsl(204, 43%, 93%);
+      background-color: hsl(71, 73%, 54%);
+      border-style: none;
+      text-align: center;
+      box-shadow: 1px 1px 1px 1px rgb(181, 181, 181);
+      width: 200px;
+      border-radius: 5px;
+      padding: 5px;
+      font-family: "Roboto";
+
+    }
+
+    #secondColumn{
+      background-color: hsl(179, 75%, 42%);
+      padding: 20px;
+    }
+
+    #head-question{
+      font-family: "Roboto";
+      color: hsl(204, 43%, 93%);
+    }
+
+    #tutorial{
+      font-family: "Roboto Mono";
+      color: hsl(204, 43%, 93%);
+    }
+
+    @media only screen and (max-width:600px) and (min-width:375px){
+    #main-container {
+      display: grid;
+      grid-template-rows: auto auto auto;
+      grid-template-columns: auto;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 5px 5px 5px 5px rgb(181, 181, 181);
+      border-radius: 10px;
+      margin: 100px;
+    }
+  }
+  </style>
+</head>
+
+<body>
+  <div id="main-container">
+    <div id="firstRow">
+      <h1 id="head-title">Join our community</h1>
+      <span id="offers">30-day, hassle-free money back guarantee</span>
+      <p id="details">
+        Gain access to our full library of tutorials along with expert code reviews.
+        Perfect for any developers who are serious about honing their skills.
+      </p>
+    </div>
+    <div id="secondRow">
+      <div id="firstColumn">
+        <h2 id="subScript">Monthly Subscription</h2>
+
+        <p id="sub-Offer">
+        <span id="salary">&dollar;29</span>
+        <span id="delay"> per month</span>
+        </p>
+
+        <p id="access-Offer">Full access for less than &dollar;1 a day</p>
+        <button id="sign-Button">Sign Up</button> 
+      </div>
+      <div id="secondColumn">
+        <h2 id="head-question"> Why Us</h2>
+        <p id="tutorial">
+          Tutorials by industry experts
+          Peer &amp; expert code review
+          Coding exercises
+          Access to our GitHub repos
+          Community forum
+          Flashcard decks
+          New videos every week
+        </p>
+      </div>
+    </div>
+  </div>
+
+ 
+
+
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+</body>
+
+</html>
